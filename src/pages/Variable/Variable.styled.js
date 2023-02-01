@@ -9,13 +9,24 @@ export const Container = styled.div`
 
 export const Box = styled.div`
     display: block;
-    max-width: 480px;
+    max-width: 300px;
+    margin: 0px 10px 0px 10px;
+    @media (min-width: 480px) {
+        max-width: 480px;
+        margin: 0px 15px 0px 15px;
+    }
 `;
 
 export const Title = styled.h2`
-    font-size: 20px;
+    font-size: 16px;
+    @media (min-width: 480px) {
+        font-size: 20px;
+    }
 `;
 
 export const Text = styled.p`
-    font-size: 16px;
+    font-size: 14px;
+    @media (min-width: 480px) {
+        font-size: 16px;
+    }
 `;

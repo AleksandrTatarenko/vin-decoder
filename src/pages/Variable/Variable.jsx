@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 const Link = styled(NavLink)`
     display: block;
-    max-width: 40px;
+    max-width: 30px;
     margin-top: 20px;
     text-decoration: none;
     padding: 5px 15px 5px 15px;
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     border: 1px solid;
     border-radius: 5px;
@@ -21,6 +21,10 @@ const Link = styled(NavLink)`
         color: white;
         background-color: grey;
     };
+    @media (min-width: 480px) {
+        max-width: 40px;
+        font-size: 18px;
+    }
 `
 
 const Variable = () => {

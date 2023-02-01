@@ -7,8 +7,14 @@ export const Container = styled.div`
     background-color: #FFF;
 `;
 
+export const Box = styled.div`
+    margin: 20px 10px 0px 10px;
+    @media (min-width: 480px) {
+        margin: 20px 15px 0px 15px;
+    }
+`
+
 export const List = styled.ul`
-    margin-top: 20px;
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;

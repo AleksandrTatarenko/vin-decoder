@@ -23,8 +23,11 @@ export const Item = styled.li`
 `;
 
 export const Link = styled.a`
-    font-size: 18px;
+    font-size: 15px;
     font-weight: normal;
     border: none;
     background-color: #F8F8F8;
+    @media (min-width: 480px) {
+        font-size: 18px;
+    }
 `;

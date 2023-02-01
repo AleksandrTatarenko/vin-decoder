@@ -6,6 +6,13 @@ export const Container = styled.div`
     align-items: center;
 `;
 
+export const Box = styled.div`
+    margin: 0px 10px 0px 10px;
+    @media (min-width: 480px) {
+        margin: 0px 15px 0px 15px;
+    }
+`
+
 export const List = styled.ul`
     margin-block-start: 0px;
     margin-block-end: 0px;
