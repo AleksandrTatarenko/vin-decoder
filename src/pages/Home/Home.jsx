@@ -12,7 +12,7 @@ const Home = () => {
 
     const onSubmit = (vin) => {
         setVin(vin);
-        if (decodedVinsList.length = 5) {
+        if (decodedVinsList.length === 5) {
             decodedVinsList.splice(0, 1);
             setDecodedVinsList(prev => ([...prev, vin]));
         } else {
@@ -36,7 +36,7 @@ const Home = () => {
             fetchVin(vin);
             localStorage.setItem('vins-list', JSON.stringify(decodedVinsList));
         }
-    }, [vin]);
+    }, [vin, decodedVinsList]);
 
     return (
         <>

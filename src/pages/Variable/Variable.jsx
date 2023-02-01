@@ -27,10 +27,11 @@ const Variable = () => {
     const [variable, setVariable] = useState({})
     const location = useLocation();
     const back = location.state?.from ?? '/';
+    const data = location.state.data
 
     useEffect(() => {
-        setVariable(location.state.data)
-    },[])
+        setVariable(data)
+    },[data])
     
     return (
         <Container>
