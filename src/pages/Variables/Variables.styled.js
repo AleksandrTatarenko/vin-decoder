@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
     display: flex;
@@ -11,7 +12,15 @@ export const Box = styled.div`
     @media (min-width: 480px) {
         margin: 0px 15px 0px 15px;
     }
-`
+`;
+
+export const Link = styled(NavLink)`
+    font-weight: normal;
+    font-size: 14px;
+    @media (min-width: 480px) {
+        font-size: 16px;
+    };
+`;
 
 export const List = styled.ul`
     margin-block-start: 0px;
